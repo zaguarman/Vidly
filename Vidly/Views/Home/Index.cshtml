@@ -1,5 +1,15 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    @*ViewBag.Title = "Home Page";
+
+    <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(customer.Name, "Details", "Customers", )</td>
+            </tr>
+        }
+
+    </tbody>*@
 }
 
 <div class="jumbotron">
